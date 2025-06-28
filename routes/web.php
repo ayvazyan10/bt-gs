@@ -24,3 +24,8 @@ Route::get('referenzen', [PageController::class, 'referenzen'])->template(Refere
 Route::get('galerie', [PageController::class, 'galerie'])->template(GalleryTemplate::class)->name('galerie');
 Route::get('node/{slug}', [PageController::class, 'show'])->name('page');
 Route::get('galerie/{id}/show', [PageController::class, 'galleryShow'])->name('gallery.show');
+
+
+Route::get('calc', function () {
+    return view('calculator');
+})->name('calculator');
