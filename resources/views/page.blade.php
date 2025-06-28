@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-12">
                     @if($page->slug == 'preise')
-                        <iframe src="https://ortu-agency.perspectivefunnel.com/bundt-gebaeudereinigung/"
+                        <iframe src="https://form.typeform.com/to/vfzsFdX2"
                                 width="100%" height="600" frameborder="0"></iframe>
                     @else
                         {!! $page->content !!}
