@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PageController;
 use App\Nova\Templates\FeedBackTemplate;
 use App\Nova\Templates\GalleryTemplate;
@@ -25,7 +26,5 @@ Route::get('galerie', [PageController::class, 'galerie'])->template(GalleryTempl
 Route::get('node/{slug}', [PageController::class, 'show'])->name('page');
 Route::get('galerie/{id}/show', [PageController::class, 'galleryShow'])->name('gallery.show');
 
-
-Route::get('calc', function () {
-    return view('calculator');
-})->name('calculator');
+Route::post('kontakt/senden', [ContactController::class, 'send'])
+    ->name('kontakt.send');

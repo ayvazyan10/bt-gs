@@ -123,53 +123,69 @@
                     <div class="container-fluid bg-gray pt20 pb20 pr30 pl30">
                         <div class="row">
 
-                            <form name="contactform" id="contactForm" method="post"
-                                  action="/backend/ajax/frontend/core.php" class="positioned">
-                                <div class="col-md-12">
+                            <form id="contactForm"
+                                  method="POST"
+                                  action="{{ route('kontakt.send') }}"
+                                  class="positioned">
+                                @csrf
 
-
-                                    <div class="form-group">
-                                        <label>vollständiger Name</label>
-                                        <input type="text" class="input-md input-rounded form-control" name="senderName"
-                                               id="senderName" placeholder="" maxlength="100">
+                                @if(session('success'))
+                                    <div class="alert alert-success">
+                                        {{ session('success') }}
                                     </div>
+                                @endif
 
-                                    <div class="form-group">
-                                        <label>E-Mail-Addresse</label>
-                                        <input type="text" class="input-md input-rounded form-control"
-                                               name="senderEmail" id="senderEmail" placeholder="" maxlength="100">
-                                    </div>
+                                <div class="form-group">
+                                    <label>Vollständiger Name</label>
+                                    <input type="text"
+                                           name="senderName"
+                                           value="{{ old('senderName') }}"
+                                           class="form-control">
+                                    @error('senderName')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
 
+                                <div class="form-group">
+                                    <label>E-Mail-Adresse</label>
+                                    <input type="email"
+                                           name="senderEmail"
+                                           value="{{ old('senderEmail') }}"
+                                           class="form-control">
+                                    @error('senderEmail')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
 
-                                    <div class="form-group">
-                                        <label>Ihre Nachricht </label>
-                                        <textarea class="form-control" rows="4" name="message" id="message"></textarea>
-                                    </div>
+                                <div class="form-group">
+                                    <label>Ihre Nachricht</label>
+                                    <textarea name="message"
+                                              rows="4"
+                                              class="form-control">{{ old('message') }}</textarea>
+                                    @error('message')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
 
-                                    <div class="form-group">
-                                        <label>captcha</label>
-                                        <input type="text" class="input-md input-rounded form-control"
-                                               name="senderHuman" id="senderHuman" placeholder="8 + 11 = ?"
-                                               maxlength="100">
-                                        <input type="hidden" name="checkHuman_a" id="checkHuman_a" value="8">
-                                        <input type="hidden" name="checkHuman_b" id="checkHuman_b" value="11">
-                                    </div>
+                                <div class="form-group">
+                                    <label>Sicherheitsfrage: 8 + 11 = ?</label>
+                                    <input type="text"
+                                           name="senderHuman"
+                                           value="{{ old('senderHuman') }}"
+                                           class="form-control">
+                                    <input type="hidden" name="checkHuman_a" value="8">
+                                    <input type="hidden" name="checkHuman_b" value="11">
+                                    @error('senderHuman')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
 
-                                    <div class="form-group">
-                                        <button onclick="dataLayer.push({ event: 'contactFormClick' })" name="sendMessage" id="sendMessage"
-                                                class="button-o button-md button-rounded button-block button-blue hover-bounce-to-right">
-                                            Nachricht senden
-                                        </button>
-                                    </div>
-
-                                    <div id="sendingMessage" class="statusMessage sending-message"><p>Sending your
-                                            message. Please wait...</p></div>
-                                    <div id="successMessage" class="statusMessage success-message"><p>Thanks for sending
-                                            your message! We'll get back to you shortly.</p></div>
-                                    <div id="failureMessage" class="statusMessage failure-message"><p>There was a
-                                            problem sending your message. Please try again.</p></div>
-                                    <div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields
-                                            in the form before sending.</p></div>
+                                <div class="form-group">
+                                    <button type="submit"
+                                            onclick="dataLayer.push({ event: 'contactFormClick' })"
+                                            class="btn btn-primary btn-block">
+                                        Nachricht senden
+                                    </button>
                                 </div>
                             </form>
 
