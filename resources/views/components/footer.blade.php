@@ -142,7 +142,7 @@
 
                         <!-- button start -->
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                            <button type="submit" name="sendMessage" id="sendMessage"
+                            <button type="submit" onclick="dataLayer.push({ event: 'buttonClick' })" name="sendMessage" id="sendMessage"
                                     class="button button-md button-block button-grad-stellar">Nachricht senden
                             </button>
                         </div>

@@ -10,7 +10,7 @@
     <meta name="google-site-verification" content="ZDe4QvDuRWfn3YZV8G2LGmORsffrbP8CC7T7AUB2bxM"/>
     @include('layout.parts.head')
 
-    {{ nova_get_setting('head_code') }}
+    {!! nova_get_setting('head_code') !!}
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="100">
 

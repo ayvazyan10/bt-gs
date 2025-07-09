@@ -207,14 +207,15 @@
 
     <!-- Review Area
     ===================================== -->
-    <style>.displaynone {
+    <style>
+        .displaynone {
             display: none;
         }
-
         .success {
             color: #b2cc71;
             font-size: 25px;
-        }</style>
+        }
+    </style>
     <div id="review_area" class="pt50 pb50">
         <h4>Bewertungen</h4>
         <div class="container">

@@ -156,7 +156,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <button name="sendMessage" id="sendMessage"
+                                        <button onclick="dataLayer.push({ event: 'contactFormClick' })" name="sendMessage" id="sendMessage"
                                                 class="button-o button-md button-rounded button-block button-blue hover-bounce-to-right">
                                             Nachricht senden
                                         </button>
