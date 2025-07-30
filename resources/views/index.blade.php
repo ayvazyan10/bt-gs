@@ -197,7 +197,7 @@
                         Sind Sie bereit?
                     </h1>
 
-                    <a class="button-o button-md button-green hover-fade mt25" href="/de/feedback/"><span
+                    <a class="button-o button-md button-green hover-fade mt25" href="/feedback"><span
                             class="color-light">Kontaktieren Sie uns</span></a>
                 </div>
             </div>
