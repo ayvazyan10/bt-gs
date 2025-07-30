@@ -20,7 +20,7 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand page-scroll" href="/">
-                <img src="/img/bt-logo.png" alt="bt-logo">
+                <img src="/img/B&T_logo_page4_maxres.png" height="90" alt="bt-logo">
             </a>
         </div>
 
