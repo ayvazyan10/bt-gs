@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Whitecube\NovaPage\Pages\Manager;
+use Whitecube\NovaPage\Pages\Template;
 
 class ContactController extends Controller
 {
@@ -41,6 +43,15 @@ class ContactController extends Controller
         });
 
         // Редирект назад с флеш-сообщением
-        return redirect()->back()->with('success', 'Ihre Nachricht wurde erfolgreich gesendet.');
+        return redirect()->route('kontakt.success')->with('success', 'Ihre Nachricht wurde erfolgreich gesendet.');
+    }
+
+    public function kontaktSuccess(Template $template, Manager $novapage)
+    {
+        $novapage->load('feedback', 'route', false);
+
+        return view('feedback', [
+            'page' => $template,
+        ]);
     }
 }

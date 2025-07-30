@@ -28,3 +28,6 @@ Route::get('galerie/{id}/show', [PageController::class, 'galleryShow'])->name('g
 
 Route::post('kontakt/senden', [ContactController::class, 'send'])
     ->name('kontakt.send');
+Route::get('kontakt/senden/success', [ContactController::class, 'kontaktSuccess'])
+    ->template(FeedBackTemplate::class)
+    ->name('kontakt.success');
