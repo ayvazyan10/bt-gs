@@ -5,3 +5,4 @@
 .navbar-brand {
     float: unset !important;
 }
+.grecaptcha-badge { visibility: hidden !important; }
