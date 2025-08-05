@@ -12,6 +12,7 @@ class ContactController extends Controller
     public function send(Request $request)
     {
         $validated = $request->validate([
+            'g-recaptcha-response' => 'required|recaptchav3:contactform,0.5',
             'senderName'    => 'required|string|max:100',
             'senderEmail'   => 'required|email|max:100',
             'message'       => 'required|string',

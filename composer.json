@@ -11,6 +11,7 @@
         "eminiarts/nova-tabs": "^2.2",
         "guzzlehttp/guzzle": "^7.2",
         "jameslkingsley/nova-stripe-theme": "^1.0",
+        "josiasmontag/laravel-recaptchav3": "^1.0",
         "laravel/framework": "^10.10",
         "laravel/nova": "*",
         "laravel/sanctum": "^3.2",

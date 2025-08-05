@@ -19,7 +19,6 @@
             @endforeach
         </ol>
         <div class="carousel-inner">
-
             @foreach($page->slider as $slide)
                 @php(extract($slide['attributes']))
                 <div class="item carousel-img {{ $loop->first ? 'active' : '' }}"
@@ -47,7 +46,6 @@
                     </div>
                 </div>
             @endforeach
-
         </div>
         <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
                 class="glyphicon glyphicon-chevron-left"></span></a>

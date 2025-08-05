@@ -128,6 +128,7 @@
                                   action="{{ route('kontakt.send') }}"
                                   class="positioned">
                                 @csrf
+                                {!! RecaptchaV3::field('contactform') !!}
 
                                 @if(session('success'))
                                     <div class="alert alert-success">

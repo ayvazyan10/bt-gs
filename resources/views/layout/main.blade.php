@@ -13,7 +13,7 @@
     {!! nova_get_setting('head_code') !!}
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="100">
-
+{!! RecaptchaV3::initJs() !!}
 {!! nova_get_setting('body_code') !!}
 
 <x-header/>
