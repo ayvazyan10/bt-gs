@@ -23,7 +23,7 @@ Route::get('/', [PageController::class, 'homePage'])->template(HomeTemplate::cla
 Route::get('feedback', [PageController::class, 'feedBack'])->template(FeedBackTemplate::class)->name('feedback');
 Route::get('referenzen', [PageController::class, 'referenzen'])->template(ReferenzenTemplate::class)->name('referenzen');
 Route::get('galerie', [PageController::class, 'galerie'])->template(GalleryTemplate::class)->name('galerie');
-Route::get('node/{slug}', [PageController::class, 'show'])->name('page');
+Route::get('{slug}', [PageController::class, 'show'])->name('page');
 Route::get('galerie/{id}/show', [PageController::class, 'galleryShow'])->name('gallery.show');
 
 Route::post('kontakt/senden', [ContactController::class, 'send'])
