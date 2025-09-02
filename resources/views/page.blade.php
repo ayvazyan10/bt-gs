@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.core')
 
 @include('layout.utils.meta-tags', [
     'title' => $page->meta_title ?: $page->title,
@@ -8,36 +8,39 @@
 ])
 
 @section('content')
-    <header class="pt100 pb100 parallax-window-2" data-parallax="scroll" data-speed="0.5"
-            style="background-color: #9ab4bd"
-            data-image-src="https://via.placeholder.com/1920x640.png/006688?text=Auto+Generated+Image+-+ipsum" data-positionY="1000">
-        <div class="intro-body text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 pt50">
-                        <h1 class="brand-heading font-montserrat text-uppercase color-light"
-                            data-in-effect="fadeInDown">
-                            {{ $page->title }} <small class="color-light alpha7">...</small>
-                        </h1>
-                    </div>
+    <header
+        class="relative overflow-hidden bg-gradient-to-b from-cyan-700 to-cyan-600"
+    >
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative py-24 md:py-32">
+            <div class="mx-auto max-w-screen-2xl px-4 lg:px-8">
+                <div class="text-center pt-10">
+                    <h1 class="text-white uppercase tracking-wide text-3xl md:text-5xl font-semibold">
+                        {{ $page->title }}
+                        <small class="block mt-2 text-white/80">...</small>
+                    </h1>
                 </div>
             </div>
-
         </div>
     </header>
 
-    <div id="static_page" class="pt75 pb50">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    @if($page->slug == 'preise')
-                        <iframe src="https://form.typeform.com/to/vfzsFdX2"
-                                width="100%" height="600" frameborder="0"></iframe>
-                    @else
-                        {!! $page->content !!}
-                    @endif
+    <section id="static_page" class="py-20">
+        <div class="mx-auto max-w-screen-2xl px-4 lg:px-8">
+            @if($page->slug == 'preise')
+                <div class="aspect-[16/10] lg:aspect-[16/9] rounded-xl overflow-hidden ring-1 ring-slate-200 bg-white">
+                    <iframe
+                        src="https://form.typeform.com/to/vfzsFdX2"
+                        class="w-full h-full"
+                        frameborder="0"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-            </div>
+            @else
+                <div class="mt-6">
+                    {!! $page->content !!}
+                </div>
+            @endif
         </div>
-    </div>
+    </section>
 @endsection

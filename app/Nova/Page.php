@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Manogi\Tiptap\Tiptap;
+use Mostafaznv\NovaCkEditor\CkEditor;
 use Outl1ne\NovaSortable\Traits\HasSortableRows;
 
 class Page extends Resource
@@ -52,44 +53,11 @@ class Page extends Resource
                 Tab::make('GENERAL', [
                     ID::make()->sortable(),
                     Text::make('Title', 'title')->rules('required'),
-                    Tiptap::make('Content', 'content')
-                        ->nullable()
-                        ->buttons([
-                            'heading',
-                            '|',
-                            'italic',
-                            'bold',
-                            '|',
-                            'link',
-                            'code',
-                            'strike',
-                            'underline',
-                            'highlight',
-                            '|',
-                            'bulletList',
-                            'orderedList',
-                            'br',
-                            'codeBlock',
-                            'blockquote',
-                            '|',
-                            'horizontalRule',
-                            'hardBreak',
-                            '|',
-                            'table',
-                            '|',
-                            'image',
-                            '|',
-                            'textAlign',
-                            '|',
-                            'rtl',
-                            '|',
-                            'history',
-                            '|',
-                            'editHtml',
-                        ])
-                        ->headingLevels([2, 3, 4])
-                        ->htmlTheme('night')
-                        ->hideFromIndex(),
+                    CkEditor::make('Content', 'content')->required()
+                        ->height(400)
+                        ->fullWidth()
+                        ->hideFromIndex()
+                        ->stacked(),
                     Select::make('Position in menu', 'position')->options([
                         'top' => 'Website Header',
                         'bottom' => 'Website Footer',

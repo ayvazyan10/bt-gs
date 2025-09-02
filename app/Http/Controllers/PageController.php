@@ -58,4 +58,13 @@ class PageController extends Controller
 
         return view('page', compact('page'));
     }
+
+    public function golffreunde(Template $template, Manager $novapage)
+    {
+        $novapage->load('golffreunde', 'route', false);
+
+        return view('golf', [
+            'page' => $template,
+        ]);
+    }
 }

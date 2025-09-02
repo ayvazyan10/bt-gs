@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.core')
 
 @include('layout.utils.meta-tags', [
     'title' => $page->meta_title ?: $page->title,
@@ -8,36 +8,33 @@
 ])
 
 @section('content')
-    <header class="pt100 pb100 parallax-window-2" data-parallax="scroll" data-speed="0.5"
-            data-image-src="{{ $page->image }}" data-positionY="1000">
-        <div class="intro-body text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 pt50">
-                        <h1 class="brand-heading font-montserrat text-uppercase color-light"
-                            data-in-effect="fadeInDown">
-                            {{ $page->title }} <small class="color-light alpha7">{!! $page->description !!}</small>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </header>
-
-    <div id="static_page" class="pt75 pb50">
-        <div class="container">
-            <div class="row">
+    <section id="static_page" class="py-20">
+        <div class="mx-auto max-w-screen-2xl px-4 lg:px-8">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                 @foreach(json_decode($page->partners, true) as $partner)
-                    <div class="col-md-3 col-sm-3 col-xs-3 mb25" style="min-height: 300px;">
-                        <div class="desaturate" style="width: 100%; height: 200px; background:  #FFFFFF url('{{ $partner["attributes"]["logo"] }}') no-repeat center center;  background-size:150px; "></div>
-                        <h5 class="font-montserrat mt10">
-                            {{ $partner["attributes"]["name"] }}
-                            <small><a href="{{ $partner["attributes"]["link"] }}" target="_blank">Webseite besuchen</a></small>
-                        </h5>
-                    </div>
+                    <article class="min-h-[300px]">
+                        <div class="rounded-xl overflow-hidden ring-1 ring-slate-200 bg-white h-full flex flex-col">
+                            {{-- превью логотипа как background, size 150px, по центру, без повторов --}}
+                            <div class="h-[200px] w-full bg-white bg-center bg-no-repeat bg-[length:150px]
+                          grayscale hover:grayscale-0 transition"
+                                 style="background-image:url('{{ $partner['attributes']['logo'] }}')">
+                            </div>
+
+                            <div class="p-3">
+                                <h5 class="font-semibold leading-tight">
+                                    {{ $partner['attributes']['name'] }}
+                                    <small class="block">
+                                        <a href="{{ $partner['attributes']['link'] }}" target="_blank" rel="noopener"
+                                           class="text-cyan-700 hover:text-cyan-900 underline underline-offset-4">
+                                            Webseite besuchen
+                                        </a>
+                                    </small>
+                                </h5>
+                            </div>
+                        </div>
+                    </article>
                 @endforeach
             </div>
         </div>
-    </div>
+    </section>
 @endsection

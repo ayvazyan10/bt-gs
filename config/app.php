@@ -141,7 +141,7 @@ return [
 
     'maintenance' => [
         'driver' => 'file',
-        // 'store'  => 'redis',
+        // 'store' => 'redis',
     ],
 
     /*
@@ -159,7 +159,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Whitecube\NovaPage\NovaPageServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -170,6 +169,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\NovaServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ViewServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -184,7 +184,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        'Page' => Whitecube\NovaPage\NovaPageFacade::class,
+        // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
 ];

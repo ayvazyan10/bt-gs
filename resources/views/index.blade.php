@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.core')
 
 @include('layout.utils.meta-tags', [
     'title' => $page->meta_title ?: $page->title,
@@ -8,240 +8,197 @@
 ])
 
 @section('content')
-    {{--        @if(isset($page->slider))--}}
-    <!-- Intro Area ===================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            @foreach($page->slider as $slide)
-                <li data-target="#myCarousel"
-                    data-slide-to="{{ $loop->index }}"
-                    class="{{ $loop->first ? 'active' : '' }}"></li>
-            @endforeach
-        </ol>
-        <div class="carousel-inner">
+    <section
+        x-data="{
+      i: 0,
+      count: {{ count($page->slider) }},
+      timer: null,
+      next(){ this.i = (this.i + 1) % this.count },
+      prev(){ this.i = (this.i - 1 + this.count) % this.count },
+      play(){ this.timer = setInterval(()=>this.next(), 6000) },
+      stop(){ clearInterval(this.timer) }
+  }"
+        x-init="play()"
+        @mouseenter="stop()" @mouseleave="play()"
+        class="relative overflow-hidden bg-black"
+        aria-label="Hero slider"
+    >
+        <div class="relative h-[60vh] min-h-[420px] w-full">
             @foreach($page->slider as $slide)
                 @php(extract($slide['attributes']))
-                <div class="item carousel-img {{ $loop->first ? 'active' : '' }}"
-                     style="background-image: url('{{ $image }}'); background-position: center center;">
-                    <div class="container">
-                        <div class="carousel-caption text-left animated" data-animation="bounceInLeft"
-                             data-animation-delay="100">
-                            <h1 class="text-left text-capitalize color-light mt-50">
-                                {{ $title }}
-                            </h1>
-                            <p class="color-light text-left mt20">
-                            <span style="color:#222222;">
-                                {{ $description }}
-                            </span>
+                <div
+                    x-show="i === {{ $loop->index }}"
+                    x-transition.opacity.duration.700ms
+                    class="absolute inset-0 will-change-transform"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="{{ $loop->iteration }} / {{ count($page->slider) }}"
+                    style="background-image:url('{{ $image }}'); background-position:center; background-size:cover;"
+                >
+                    <div class="absolute inset-0 bg-black/30"></div>
 
-                                @if($button)
-                                <br>
-                                <a href="{{ $link }}"
-                                   class="button button-md button-circle hover-ripple-out button-blue mt30">
-                                    {{ $button }}
-                                </a>
-                                @endif
-                            </p>
+                    <div class="relative h-full">
+                        <div class="mx-auto max-w-screen-2xl h-full px-4 lg:px-8 flex items-center">
+                            <div class="max-w-3xl">
+                                <h1 class="text-left uppercase tracking-tight text-white text-3xl md:text-5xl font-semibold">
+                                    {{ $title }}
+                                </h1>
+
+                                <p class="mt-5 text-white/90 text-base md:text-lg">
+                                    <span class="text-black/90 bg-white/70 px-1 rounded">{{ $description }}</span>
+                                    @if($button)
+                                        <br>
+                                        <a href="{{ $link }}"
+                                           class="inline-flex items-center justify-center mt-6 h-12 px-6 rounded-full bg-cyan-600 text-white font-semibold hover:bg-cyan-700 transition">
+                                            {{ $button }}
+                                        </a>
+                                    @endif
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             @endforeach
         </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
-                class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span
-                class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-    {{--        @endif--}}
 
+        <button @click="prev()" class="absolute cursor-pointer left-10 top-1/2 -translate-y-1/2 grid place-items-center w-10 h-10 rounded-full bg-white/80 hover:bg-white shadow">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2"/></svg>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button @click="next()" class="absolute cursor-pointer right-10 top-1/2 -translate-y-1/2 grid place-items-center w-10 h-10 rounded-full bg-white/80 hover:bg-white shadow">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+            <span class="sr-only">Next</span>
+        </button>
 
-    <!-- Welcome Area
-    ===================================== -->
-    <div id="welcome" class="pt75">
-        <div class="container">
-            <div class="row">
+        <ol class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            @foreach($page->slider as $slide)
+                <li>
+                    <button @click="i = {{ $loop->index }}"
+                            :class="i === {{ $loop->index }} ? 'bg-cyan-600' : 'bg-white/70'"
+                            class="h-2.5 w-2.5 rounded-full ring-2 ring-white/70 transition"></button>
+                </li>
+            @endforeach
+        </ol>
+    </section>
 
-                <!-- title start -->
-                <div class="col-md-12 text-center">
-                    <h1 class="font-size-normal">
-                        <small>Ihr kompetenter Partner rund um die gewerbliche und private Reinigung</small>
-                        B&T Gebäudeservice – Alles Sauber <small class="heading heading-solid center-block"></small>
-                    </h1>
-                </div>
-                <!-- title end -->
-
-                <iframe width="100%" height="440" src="https://www.youtube.com/embed/4EhYIi6R_iA"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-
-                <!-- title description start -->
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <p>
-                        <span class="lead"><strong>Sauberkeit und Hygiene ist unsere Passion. Als Komplettdienstleister bieten wir Ihnen ein breites Servicespektrum rund um die Themen Reinigung, Sauberkeit, Hygiene und Saubere Umwelt. Verschaffen sie sich auf unserer Internetseite einen ersten Einblick in unsere Betätigungsfelder und unsere Firmenphilosophie. Und wenn Sie fragen haben, rufen Sie uns einfach an. Wir sind 7 Tage in der Woche für Sie da. Versprochen!</strong></span><br><br>
-
-                        PERFEKTE SAUBERKEIT BIS IN ALLE ECKEN ERREICHEN WIR FÜR SIE MIT:<br><br>
-                        • zuverlässigen, hoch motivierten und vertrauenswürdigen Mitarbeitern <br>
-                        • regelmäßigen fachlichen Schulungen und Fortbildungen<br>
-                        • modernen Reinigungsgeräten und –Mitteln<br>
-                        • hohen Qualitätsansprüchen und besonderer Gründlichkeit
-                    </p>
-                </div>
-                <!-- title description end -->
+    <section id="welcome" class="pt-12 md:pt-20">
+        <div class="mx-auto max-w-screen-2xl px-4 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-2xl md:text-4xl font-semibold leading-tight">
+                    <small class="block text-base md:text-lg font-normal text-slate-600">
+                        Ihr kompetenter Partner rund um die gewerbliche und private Reinigung
+                    </small>
+                    B&amp;T Gebäudeservice – Alles Sauber
+                </h1>
             </div>
 
-            <div class="row mt50">
-
-                <!-- item one start -->
-                <div class="col-md-3 col-sm-6 col-xs-6 animated" data-animation="fadeInLeft"
-                     data-animation-delay="100">
-                    <div class="content-box content-box-center">
-                        <span class="icon-focus color-pasific"></span>
-                        <h5>Allgäu und Umkreis</h5>
-                        <p></p>
-
-                    </div>
+            <div class="mt-8">
+                <div class="aspect-video rounded-xl overflow-hidden shadow">
+                    <iframe class="w-full h-full"
+                            src="https://www.youtube.com/embed/4EhYIi6R_iA"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                 </div>
-                <!-- item one end -->
-
-                <!-- item two start -->
-                <div class="col-md-3 col-sm-6 col-xs-6 animated" data-animation="fadeInLeft"
-                     data-animation-delay="200">
-                    <div class="content-box content-box-center">
-                        <span class="icon-clock color-pasific"></span>
-                        <h5>Immer Erreichbar</h5>
-                        <p></p>
-
-                    </div>
-                </div>
-                <!-- item two end -->
-
-                <!-- item three start -->
-                <div class="col-md-3 col-sm-6 col-xs-6 animated" data-animation="fadeInRight"
-                     data-animation-delay="300">
-                    <div class="content-box content-box-center">
-                        <span class="icon-genius color-pasific"></span>
-                        <h5>Flexibel </h5>
-                        <p></p>
-
-                    </div>
-                </div>
-                <!-- item three end -->
-
-                <!-- item four start -->
-                <div class="col-md-3 col-sm-6 col-xs-6 animated" data-animation="fadeInRight"
-                     data-animation-delay="400">
-                    <div class="content-box content-box-center">
-                        <span class="icon-refresh color-pasific"></span>
-                        <h5>Qualität </h5>
-                        <p></p>
-
-                    </div>
-                </div>
-                <!-- item four start -->
-
             </div>
+
+            <div class="mt-10 mx-auto max-w-3xl text-center text-slate-800">
+                <p>
+                    <span class="text-lg md:text-xl font-semibold">
+                      Sauberkeit und Hygiene ist unsere Passion. Als Komplettdienstleister bieten wir Ihnen ein breites Servicespektrum rund um die Themen Reinigung, Sauberkeit, Hygiene und Saubere Umwelt. Verschaffen sie sich auf unserer Internetseite einen ersten Einblick in unsere Betätigungsfelder und unsere Firmenphilosophie. Und wenn Sie fragen haben, rufen Sie uns einfach an. Wir sind 7 Tage in der Woche für Sie da. Versprochen!
+                    </span>
+                    <br><br>
+                    PERFEKTE SAUBERKEIT BIS IN ALLE ECKEN ERREICHEN WIR FÜR SIE MIT:
+                    <br><br>
+                    • zuverlässigen, hoch motivierten und vertrauenswürdigen Mitarbeitern <br>
+                    • regelmäßigen fachlichen Schulungen und Fortbildungen<br>
+                    • modernen Reinigungsgeräten und –Mitteln<br>
+                    • hohen Qualitätsansprüchen und besonderer Gründlichkeit
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 rounded-xl ring-1 ring-slate-200 hover:shadow-md transition">
+                    <div class="mx-auto mb-3 h-12 w-12 grid place-items-center rounded-xl bg-cyan-50 text-cyan-600">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6">
+                            <path d="M9 6l6-3 6 3v12l-6-3-6 3-6-3V3l6 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M9 6v12M15 3v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h5 class="font-semibold">Allgäu und Umkreis</h5>
+                    <p class="text-sm text-slate-600"></p>
+                </div>
+
+                <div class="text-center p-6 rounded-xl ring-1 ring-slate-200 hover:shadow-md transition">
+                    <div class="mx-auto mb-3 h-12 w-12 grid place-items-center rounded-xl bg-cyan-50 text-cyan-600">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6">
+                            <path d="M6.5 3h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-.5a11 11 0 0 0 6.5 6.5V15a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2.5a2 2 0 0 1-2.2 2A17 17 0 0 1 3.5 7.7 2 2 0 0 1 5.5 5.5V3a0 0 0 0 1 1 0Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h5 class="font-semibold">Immer Erreichbar</h5>
+                    <p class="text-sm text-slate-600"></p>
+                </div>
+
+                <div class="text-center p-6 rounded-xl ring-1 ring-slate-200 hover:shadow-md transition">
+                    <div class="mx-auto mb-3 h-12 w-12 grid place-items-center rounded-xl bg-cyan-50 text-cyan-600">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6">
+                            <path d="M3 12h8M7 8l4 4-4 4M21 12h-8M17 8l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h5 class="font-semibold">Flexibel</h5>
+                    <p class="text-sm text-slate-600"></p>
+                </div>
+
+                <div class="text-center p-6 rounded-xl ring-1 ring-slate-200 hover:shadow-md transition">
+                    <div class="mx-auto mb-3 h-12 w-12 grid place-items-center rounded-xl bg-cyan-50 text-cyan-600">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6">
+                            <path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h5 class="font-semibold">Qualität</h5>
+                    <p class="text-sm text-slate-600"></p>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
 
+    <section id="review_area" class="py-25">
+        <div class="mx-auto max-w-screen-2xl px-4 lg:px-8">
+            <h4 class="text-2xl font-semibold text-center">Bewertungen</h4>
 
-    <div id="wea" class="pt75">
-        <div class="container">
-            <div class="row">
-
-
-                <!-- title start -->
-                <div class="col-md-12 text-center">
-                    <h1 class="font-size-normal">
-                        <small>...</small>
-                        Unser Serviceangebot an Sie: <small class="heading heading-solid center-block"></small>
-                    </h1>
-                </div>
-                <!-- title end -->
-
-                <div class="row">
-                    <div class="dt-sc-one-half first pull-left col-md-6">
-                        <ul class="dt-sc-fancy-list dt-sc-icon-list arrow">
-                            <li><img src="/assets/list-img1.png" alt="image"> Grundreinigung</li>
-                            <li><img src="/assets/list-img2.png" alt="image"> Polsterreinigung</li>
-                            <li><img src="/assets/list-img3.png" alt="image"> Teppichbodenreinigung</li>
-                            <li><img src="/assets/list-img4.png" alt="image"> Unterhaltsreinigung</li>
-                            <li><img src="/assets/list-img5.png" alt="image"> Gebäudereinigung</li>
-                            <li><img src="/assets/list-img6.png" alt="image"> Bodensanierung</li>
-                            <li><img src="/assets/list-img7.png" alt="image"> Glasreinigung</li>
-                        </ul>
+            <div class="mt-10">
+                <div class="grid gap-8">
+                    <div class="text-center max-w-3xl mx-auto">
+                        <div class="text-lg font-semibold"><span>Natascha Drexel</span></div>
+                        <p class="mt-2 text-slate-700">
+                            Kompetente Beratung, Sauberkeit Top &#38; Allzeit Hilfsbereit. Werde euch aufjedenfall weiter empfehlen.
+                        </p>
                     </div>
 
-                    <div class="col-md-6 dt-sc-one-half pull-right">
-                        <img src="/assets/cleaning-service777.png" class="img-responsive" alt="Service"
-                             title="Service">
+                    <div class="text-center max-w-3xl mx-auto">
+                        <div class="text-lg font-semibold"><span>Linda España</span></div>
+                        <p class="mt-2 text-slate-700">
+                            3 TATSACHEN :&#x29; ZUVERLÄSSIGKEIT, KOMPETENZ &#38; QUALITATIV HOCHWERTIGE ARBEIT :&#x29;
+                        </p>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Info Area
-    ===================================== -->
-    <div id="info-1" class="pt50 pb50 mt75 parallax-window" data-parallax="scroll" data-speed="0.5"
-         data-image-src="/assets/img-bg-2.jpg">
-        <div class="container">
-            <div class="row pt75">
-                <div class="col-md-12 text-center">
-                    <h1 class="color-light">
-                        <small class="color-light">Der beste Weg zum Erfolg sind Ordnung und Sauberkeit.</small>
-                        Sind Sie bereit?
-                    </h1>
-
-                    <a class="button-o button-md button-green hover-fade mt25" href="/feedback"><span
-                            class="color-light">Kontaktieren Sie uns</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Review Area
-    ===================================== -->
-    <style>
-        .displaynone {
-            display: none;
-        }
-        .success {
-            color: #b2cc71;
-            font-size: 25px;
-        }
-    </style>
-    <div id="review_area" class="pt50 pb50">
-        <h4>Bewertungen</h4>
-        <div class="container">
-            <div class="row pt75">
-                <div class="col-md-12 text-center">
-                    <div class="review-content">
-                        <div class="review-user"><span>Natascha Drexel</span><br></div>
-                        <p>Kompetente Beratung, Sauberkeit Top &#38; Allzeit Hilfsbereit. Werde euch aufjedenfall
-                            weiter
-                            empfehlen.</p>
+                    <div class="text-center max-w-3xl mx-auto">
+                        <div class="text-lg font-semibold"><span>H. Fischer</span></div>
+                        <p class="mt-2 text-slate-700">
+                            Bin sehr zufrieden, hat alles gut geklappt. Gute Beratung, saubere Abwicklung, Reiningung top. Nur weiter so. Wir werden Sie auf jeden Fall weiter empfehlen.
+                        </p>
                     </div>
-                    <div class="review-content">
-                        <div class="review-user"><span>Linda España </span><br></div>
-                        <p>3 TATSACHEN :&#x29; ZUVERLÄSSIGKEIT, KOMPETENZ &#38; QUALITATIV HOCHWERTIGE ARBEIT
-                            :&#x29; </p>
-                    </div>
-                    <div class="review-content">
-                        <div class="review-user"><span>H. Fischer</span><br></div>
-                        <p>Bin sehr zufrieden, hat alles gut geklappt. Gute Beratung, saubere Abwicklung, Reiningung
-                            top. Nur weiter so. Wir werden Sie auf jeden Fall weiter empfehlen.</p>
-                    </div>
-                    <div class="review-content">
-                        <div class="review-user"><span>Angela Schranz</span><br></div>
-                        <p>Wie immer - sauber, hilfsbereit und stets zuverlässig. Macht jedes Mal Spaß mit euch zu
-                            arbeiten.</p>
+
+                    <div class="text-center max-w-3xl mx-auto">
+                        <div class="text-lg font-semibold"><span>Angela Schranz</span></div>
+                        <p class="mt-2 text-slate-700">
+                            Wie immer - sauber, hilfsbereit und stets zuverlässig. Macht jedes Mal Spaß mit euch zu arbeiten.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 @endsection

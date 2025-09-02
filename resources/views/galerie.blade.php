@@ -1,46 +1,38 @@
-@extends('layout.main')
+@extends('layout.core')
 
 @include('layout.utils.meta-tags', [
     'title' => 'GALERIE',
 ])
 
 @section('content')
-    <header class="pt100 pb100 parallax-window-2" data-parallax="scroll" data-speed="0.5"
-            data-image-src="{{ asset('/img/_T4A0518-1.jpg') }}" data-positionY="1000">
-        <div class="intro-body text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 pt50">
-                        <h1 class="brand-heading font-montserrat text-uppercase color-light"
-                            data-in-effect="fadeInDown">
-                            GALERIE
-                        </h1>
-                    </div>
-                </div>
-            </div>
+    <section id="clients_page" class="py-20">
+        <div class="mx-auto max-w-screen-2xl px-4 lg:px-8">
+            @if($galleries->isEmpty())
+                <div class="py-16 text-center text-slate-500">Keine Einträge.</div>
+            @else
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                    @foreach($galleries as $gallery)
+                        <article class="min-h-[300px]">
+                            <a href="{{ route('gallery.show', ['id' => $gallery->id]) }}" class="group block h-full">
+                                <div class="rounded-xl overflow-hidden ring-1 ring-slate-200 bg-white">
+                                    {{-- превью как background, как и было; 200px размер, центр, без повторов --}}
+                                    <div class="h-[200px] w-full bg-white bg-center bg-no-repeat bg-[length:200px]
+                              grayscale group-hover:grayscale-0 transition duration-300"
+                                         style="background-image:url('{{ $gallery->image }}')">
+                                    </div>
 
-        </div>
-    </header>
-
-    <!-- gallery Area
-        ===================================== -->
-    <div id="clients_page" class="pt75 pb75">
-        <div class="container">
-            <div class="row">
-
-                @foreach($galleries as $gallery)
-                    <div class="col-md-3 col-sm-3 col-xs-3 mb25" style="min-height: 300px;">
-                        <div class="desaturate" style="width: 100%; height: 200px; background:  #FFFFFF url('{{ $gallery->image }}') no-repeat center center;  background-size:200px; "></div>
-                        <h5 class="font-montserrat mt10" style="background: #EEEEEE;padding: 10px;">
-                            <a href="{{ route('gallery.show', ['id' => $gallery->id]) }}">
-                                {{ $gallery->title }}
+                                    <div class="p-3 bg-slate-100">
+                                        <h5 class="font-semibold leading-tight">
+                                            {{ $gallery->title }}
+                                        </h5>
+                                        <small class="block text-slate-600">{{ $gallery->content }}</small>
+                                    </div>
+                                </div>
                             </a>
-                            <small>{{ $gallery->content }}</small>
-                        </h5>
-                    </div>
-                @endforeach
-
-            </div>
+                        </article>
+                    @endforeach
+                </div>
+            @endif
         </div>
-    </div>
+    </section>
 @endsection
