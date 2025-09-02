@@ -4,6 +4,14 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/font/Rubik/OFL.txt": {
+    "file": "assets/OFL-BGgHLySc.txt",
+    "src": "resources/font/Rubik/OFL.txt"
+  },
+  "resources/font/Rubik/README.txt": {
+    "file": "assets/README-3TEtwBzK.txt",
+    "src": "resources/font/Rubik/README.txt"
+  },
   "resources/font/Rubik/Rubik-Italic-VariableFont_wght.ttf": {
     "file": "assets/Rubik-Italic-VariableFont_wght-DW8_P9V9.ttf",
     "src": "resources/font/Rubik/Rubik-Italic-VariableFont_wght.ttf"
@@ -67,6 +75,30 @@
   "resources/font/Rubik/static/Rubik-SemiBoldItalic.ttf": {
     "file": "assets/Rubik-SemiBoldItalic-BSgvWf59.ttf",
     "src": "resources/font/Rubik/static/Rubik-SemiBoldItalic.ttf"
+  },
+  "resources/images/B&T-Logo-schwarz-2025.png": {
+    "file": "assets/B_T-Logo-schwarz-2025-DuVXzcW0.png",
+    "src": "resources/images/B&T-Logo-schwarz-2025.png"
+  },
+  "resources/images/B&T-Logo-weiss-2025.png": {
+    "file": "assets/B_T-Logo-weiss-2025-S5ai3kke.png",
+    "src": "resources/images/B&T-Logo-weiss-2025.png"
+  },
+  "resources/images/DSC02140-v2-m.png": {
+    "file": "assets/DSC02140-v2-m-NfXkKrID.png",
+    "src": "resources/images/DSC02140-v2-m.png"
+  },
+  "resources/images/Gruppe3465.png": {
+    "file": "assets/Gruppe3465-BsP3HoBH.png",
+    "src": "resources/images/Gruppe3465.png"
+  },
+  "resources/images/Rechteck-84.png": {
+    "file": "assets/Rechteck-84-fQtSdxYo.png",
+    "src": "resources/images/Rechteck-84.png"
+  },
+  "resources/images/blue-bt.png": {
+    "file": "assets/blue-bt-BPEQr6ew.png",
+    "src": "resources/images/blue-bt.png"
   },
   "resources/js/app.js": {
     "file": "assets/app-C0G0cght.js",
