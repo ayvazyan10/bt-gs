@@ -1,9 +1,72 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-l0sNRNKZ.js",
-    "name": "app",
+    "file": "assets/app-CqYDJNsd.css",
     "src": "resources/css/app.css",
     "isEntry": true
+  },
+  "resources/font/Rubik/Rubik-Italic-VariableFont_wght.ttf": {
+    "file": "assets/Rubik-Italic-VariableFont_wght-DW8_P9V9.ttf",
+    "src": "resources/font/Rubik/Rubik-Italic-VariableFont_wght.ttf"
+  },
+  "resources/font/Rubik/Rubik-VariableFont_wght.ttf": {
+    "file": "assets/Rubik-VariableFont_wght-CV_BkMil.ttf",
+    "src": "resources/font/Rubik/Rubik-VariableFont_wght.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-Black.ttf": {
+    "file": "assets/Rubik-Black-BtX9vouw.ttf",
+    "src": "resources/font/Rubik/static/Rubik-Black.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-BlackItalic.ttf": {
+    "file": "assets/Rubik-BlackItalic-BUzOuK1x.ttf",
+    "src": "resources/font/Rubik/static/Rubik-BlackItalic.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-Bold.ttf": {
+    "file": "assets/Rubik-Bold-DPz6q6wN.ttf",
+    "src": "resources/font/Rubik/static/Rubik-Bold.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-BoldItalic.ttf": {
+    "file": "assets/Rubik-BoldItalic-CbSX_3HE.ttf",
+    "src": "resources/font/Rubik/static/Rubik-BoldItalic.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-ExtraBold.ttf": {
+    "file": "assets/Rubik-ExtraBold-DlcOAag5.ttf",
+    "src": "resources/font/Rubik/static/Rubik-ExtraBold.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-ExtraBoldItalic.ttf": {
+    "file": "assets/Rubik-ExtraBoldItalic-9RTN5fCC.ttf",
+    "src": "resources/font/Rubik/static/Rubik-ExtraBoldItalic.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-Italic.ttf": {
+    "file": "assets/Rubik-Italic-CqQZtapT.ttf",
+    "src": "resources/font/Rubik/static/Rubik-Italic.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-Light.ttf": {
+    "file": "assets/Rubik-Light-CTN6lZCq.ttf",
+    "src": "resources/font/Rubik/static/Rubik-Light.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-LightItalic.ttf": {
+    "file": "assets/Rubik-LightItalic-DgPMdYdF.ttf",
+    "src": "resources/font/Rubik/static/Rubik-LightItalic.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-Medium.ttf": {
+    "file": "assets/Rubik-Medium-CEEjkc2a.ttf",
+    "src": "resources/font/Rubik/static/Rubik-Medium.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-MediumItalic.ttf": {
+    "file": "assets/Rubik-MediumItalic-a4LMYod1.ttf",
+    "src": "resources/font/Rubik/static/Rubik-MediumItalic.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-Regular.ttf": {
+    "file": "assets/Rubik-Regular-C2SsDFU5.ttf",
+    "src": "resources/font/Rubik/static/Rubik-Regular.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-SemiBold.ttf": {
+    "file": "assets/Rubik-SemiBold-DUGsauFp.ttf",
+    "src": "resources/font/Rubik/static/Rubik-SemiBold.ttf"
+  },
+  "resources/font/Rubik/static/Rubik-SemiBoldItalic.ttf": {
+    "file": "assets/Rubik-SemiBoldItalic-BSgvWf59.ttf",
+    "src": "resources/font/Rubik/static/Rubik-SemiBoldItalic.ttf"
   },
   "resources/js/app.js": {
     "file": "assets/app-C0G0cght.js",
