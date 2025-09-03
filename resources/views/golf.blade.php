@@ -37,7 +37,7 @@
                 <img
                     src="{{ $heroAvatar }}"
                     alt="Avatar"
-                    class="absolute left-10 sm:left-8 lg:left-70 -top-16 lg:-top-50
+                    class="absolute left-25 sm:left-8 lg:left-70 -top-35 md:-top-50
                            w-40 h-40 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full object-cover
                            ring-8 ring-white shadow-xl"
                 />
@@ -75,14 +75,28 @@
                             {{ $page->form_title ?: '1x Gratis Fensterreinigung' }}
                         </h3>
 
-                        <form action="#" method="post" class="mt-8 space-y-5">
+                        <form action="{{ route('golf.kontakt.send') }}" method="post" class="mt-8 space-y-5">
                             @csrf
+                            {!! RecaptchaV3::field('golfform') !!}
+
+                            @if(session('success'))
+                                <div
+                                    class="rounded-md border border-emerald-300 bg-emerald-50 text-emerald-800 px-4 py-3 text-sm">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+
                             <div>
                                 <label for="name" class="sr-only">Name</label>
                                 <input id="name" name="name" type="text" placeholder="Name:"
                                        class="w-full h-12 md:h-14 rounded-lg bg-white text-slate-900 placeholder-slate-500
                                               border border-white/60 px-4
                                               focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500">
+                                @error('name')
+                                <span class="text-sm text-red-600">
+                                    {{ $message }}
+                                </span>
+                                @enderror
                             </div>
 
                             <div>
@@ -91,6 +105,11 @@
                                        class="w-full h-12 md:h-14 rounded-lg bg-white text-slate-900 placeholder-slate-500
                                               border border-white/60 px-4
                                               focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500">
+                                @error('email')
+                                <span class="text-sm text-red-600">
+                                    {{ $message }}
+                                </span>
+                                @enderror
                             </div>
 
                             <div>
@@ -99,6 +118,11 @@
                                        class="w-full h-12 md:h-14 rounded-lg bg-white text-slate-900 placeholder-slate-500
                                               border border-white/60 px-4
                                               focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500">
+                                @error('zeitraum')
+                                <span class="text-sm text-red-600">
+                                    {{ $message }}
+                                </span>
+                                @enderror
                             </div>
 
                             @if($page->contact_phone || $page->contact_email)
