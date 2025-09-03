@@ -66,7 +66,7 @@
           <button onclick="berechne()">Berechnen</button>
         `;
         } else if (["glas_klein", "wintergarten", "boden"].includes(leistung)) {
-            feld.innerHTML = Diese Leistung wird individuell kalkuliert. Bitte kontaktieren Sie uns.;
+            feld.innerHTML = 'Diese Leistung wird individuell kalkuliert. Bitte kontaktieren Sie uns.';
         } else if (["sonder", "unterhalt"].includes(leistung)) {
             feld.innerHTML = `
           Stunden: <input type="number" id="menge" min="1">
@@ -88,7 +88,7 @@
 
         if (!isNaN(menge)) {
             const gesamt = (menge * preis).toFixed(2);
-            document.getElementById('ergebnis').innerText = Gesamtpreis (inkl. MwSt): ${gesamt} €;
+            document.getElementById('ergebnis').innerText = `Gesamtpreis (inkl. MwSt): ${gesamt} €`;
         }
     }
 </script>

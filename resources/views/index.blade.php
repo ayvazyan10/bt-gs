@@ -10,14 +10,14 @@
 @section('content')
     <section
         x-data="{
-      i: 0,
-      count: {{ count($page->slider) }},
-      timer: null,
-      next(){ this.i = (this.i + 1) % this.count },
-      prev(){ this.i = (this.i - 1 + this.count) % this.count },
-      play(){ this.timer = setInterval(()=>this.next(), 6000) },
-      stop(){ clearInterval(this.timer) }
-  }"
+                  i: 0,
+                  count: {{ count($page->slider) }},
+                  timer: null,
+                  next(){ this.i = (this.i + 1) % this.count },
+                  prev(){ this.i = (this.i - 1 + this.count) % this.count },
+                  play(){ this.timer = setInterval(()=>this.next(), 6000) },
+                  stop(){ clearInterval(this.timer) }
+              }"
         x-init="play()"
         @mouseenter="stop()" @mouseleave="play()"
         class="relative overflow-hidden bg-black"
