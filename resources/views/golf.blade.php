@@ -63,7 +63,7 @@
                     </h2>
 
 
-                    <div class="mt-8 space-y-6 text-lg leading-8 text-slate-900">
+                    <div class="mt-8 space-y-6 text-lg leading-8 text-slate-900 ck-content">
                         {!! $page->offer_richtext !!}
                     </div>
 
@@ -259,7 +259,7 @@
                                         @endif
 
                                         @if(filled($b->text))
-                                            <div class="mt-1">{!! $b->text !!}</div>
+                                            <div class="mt-1 ck-content">{!! $b->text !!}</div>
                                         @endif
                                     </div>
                                 @endforeach
@@ -291,7 +291,7 @@
                 @endif
 
                 @if($page->season_accent)
-                    <p class="mt-2 text-2xl md:text-3xl lg:text-[34px] leading-tight tracking-tight uppercase text-[#00A6D3]">
+                    <p class="mt-2 text-2xl md:text-3xl lg:text-[34px] leading-tight tracking-tight uppercase text-[#00A6D3] ck-content">
                         {!! $page->season_accent !!}
                     </p>
                 @endif

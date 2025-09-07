@@ -37,7 +37,7 @@
                     </iframe>
                 </div>
             @else
-                <div class="mt-6">
+                <div class="mt-6 ck-content">
                     {!! $page->content !!}
                 </div>
             @endif

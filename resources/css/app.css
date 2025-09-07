@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./ckeditor5-content.css";
 
 @font-face {
     font-family: "Rubik";

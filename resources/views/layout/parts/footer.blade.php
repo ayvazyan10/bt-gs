@@ -38,7 +38,9 @@
                 <span>|</span>
                 <a href="/datenschutz" class="hover:opacity-90">Datenschutzerklärung</a>
                 <span>|</span>
-                <a href="/agb" class="hover:opacity-90">Allgemeine Geschäftsbedingungen</a>
+                <a href="https://bt-gs.de/storage/AGB_BT_Gebaeudeservice.pdf"
+                   target="_blank"
+                   class="hover:opacity-90">Allgemeine Geschäftsbedingungen</a>
             </div>
             <div class="mt-2 text-sm">Copyright © 2016-{{ date('Y') }} B&amp;T. Alle Rechte vorbehalten.</div>
         </div>

@@ -14,7 +14,6 @@
                 @foreach(json_decode($page->partners, true) as $partner)
                     <article class="min-h-[300px]">
                         <div class="rounded-xl overflow-hidden ring-1 ring-slate-200 bg-white h-full flex flex-col">
-                            {{-- превью логотипа как background, size 150px, по центру, без повторов --}}
                             <div class="h-[200px] w-full bg-white bg-center bg-no-repeat bg-[length:150px]
                           grayscale hover:grayscale-0 transition"
                                  style="background-image:url('{{ $partner['attributes']['logo'] }}')">
