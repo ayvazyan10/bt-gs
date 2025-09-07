@@ -257,6 +257,7 @@ return [
                     'supportAllValues' => false,
                     'options'          => [
                         'default',
+                        'Rubik',
                         'Arial, Helvetica, sans-serif',
                         'Courier New, Courier, monospace',
                         'Georgia, serif',
