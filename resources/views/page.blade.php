@@ -9,15 +9,15 @@
 
 @section('content')
     <header
-        class="relative overflow-hidden bg-gradient-to-b from-cyan-700 to-cyan-600"
+        class="relative overflow-hidden bg-[#00A6D3]"
     >
-        <div class="absolute inset-0 bg-black/40"></div>
-        <div class="relative py-24 md:py-32">
-            <div class="mx-auto max-w-screen-2xl px-4 lg:px-8">
-                <div class="text-center pt-10">
+        <div class="absolute inset-0"></div>
+        <div class="relative py-10 md:py-15">
+            <div class="mx-auto max-w-screen-2xl px-4">
+                <div class="text-center">
                     <h1 class="text-white uppercase tracking-wide text-3xl md:text-5xl font-semibold">
                         {{ $page->title }}
-                        <small class="block mt-2 text-white/80">...</small>
+                        <small class="block mt-2 text-white/80"> </small>
                     </h1>
                 </div>
             </div>
