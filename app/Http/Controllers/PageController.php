@@ -77,16 +77,23 @@ class PageController extends Controller
             function($m) {
                 $url = $m[1];
 
+                $wrapStart = '<div class="media" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">';
+                $wrapEnd = '</div>';
+
+                // YouTube
                 if (preg_match('%(?:youtu\.be/|youtube(?:-nocookie)?\.com/(?:watch\?v=|embed/|v/|shorts/))([A-Za-z0-9_-]{4,})%i', $url, $mm)) {
                     $id = $mm[1];
-                    return '<div class="media"><iframe src="https://www.youtube.com/embed/' . htmlspecialchars($id, ENT_QUOTES, 'UTF-8')
-                        . '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:400px;"></iframe></div>';
+                    $src = 'https://www.youtube.com/embed/' . rawurlencode($id);
+                    $iframe = '<iframe src="' . $src . '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>';
+                    return $wrapStart . $iframe . $wrapEnd;
                 }
 
+                // Vimeo
                 if (preg_match('%vimeo\.com/(?:video/)?(\d+)%i', $url, $mm)) {
                     $id = $mm[1];
-                    return '<div class="media"><iframe src="https://player.vimeo.com/video/' . htmlspecialchars($id, ENT_QUOTES, 'UTF-8')
-                        . '" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:400px;"></iframe></div>';
+                    $src = 'https://player.vimeo.com/video/' . rawurlencode($id);
+                    $iframe = '<iframe src="' . $src . '" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>';
+                    return $wrapStart . $iframe . $wrapEnd;
                 }
 
                 return $m[0];
@@ -94,4 +101,5 @@ class PageController extends Controller
             $html
         );
     }
+
 }
