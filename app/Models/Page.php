@@ -20,6 +20,7 @@ class Page extends Model implements Sortable
         'meta_keywords',
         'meta_image',
         'sort_order',
+        'active'
     ];
 
     /**

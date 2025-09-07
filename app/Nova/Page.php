@@ -5,11 +5,11 @@ namespace App\Nova;
 use Ayvazyan10\Imagic\Imagic;
 use Eminiarts\Tabs\Tab;
 use Eminiarts\Tabs\Tabs;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use Manogi\Tiptap\Tiptap;
 use Mostafaznv\NovaCkEditor\CkEditor;
 use Outl1ne\NovaSortable\Traits\HasSortableRows;
 
@@ -62,6 +62,12 @@ class Page extends Resource
                         'top' => 'Website Header',
                         'bottom' => 'Website Footer',
                     ])->hideFromIndex(),
+                    Boolean::make('Active', 'active')
+                        ->trueValue(1)
+                        ->falseValue(0)
+                        ->sortable()
+                        ->rules('required')
+                        ->withMeta(['value' => true]),
                 ]),
                 Tab::make('SEO FIELDS', [
                     Text::make('Title', 'meta_title')->nullable()->hideFromIndex(),

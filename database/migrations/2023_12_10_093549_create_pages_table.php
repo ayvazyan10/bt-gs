@@ -21,6 +21,7 @@ return new class extends Migration
             $table->text('meta_description')->nullable();
             $table->text('meta_keywords')->nullable();
             $table->string('meta_image')->nullable();
+            $table->tinyInteger('active')->default(1);
             $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
