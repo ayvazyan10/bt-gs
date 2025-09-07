@@ -22,7 +22,7 @@ class Header extends Component
      */
     public function render(): View|Closure|string
     {
-        $page_menus = Page::where('position', 'top')->get();
+        $page_menus = Page::where('position', 'top')->orderBy('sort_order')->get();
 
         return view('components.header', compact('page_menus'));
     }

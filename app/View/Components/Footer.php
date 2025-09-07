@@ -22,7 +22,7 @@ class Footer extends Component
      */
     public function render(): View|Closure|string
     {
-        $footer_menus = Page::where('position', 'bottom')->get();
+        $footer_menus = Page::where('position', 'bottom')->orderBy('sort_order')->get();
 
         return view('components.footer', compact('footer_menus'));
     }
