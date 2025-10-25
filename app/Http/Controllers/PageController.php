@@ -7,12 +7,15 @@ use Whitecube\NovaPage\Pages\Template;
 
 class PageController extends Controller
 {
-    public function homePage(Template $template, Manager $novapage)
+    public function homePage(Manager $novapage)
     {
-        $novapage->load('home', 'route', false);
+        $home = $novapage->load('home', 'route', false);
+
+        $referenzen = $novapage->load('referenzen', 'route', false);
 
         return view('index', [
-            'page' => $template,
+            'page' => $home,
+            'referenzen' => $referenzen,
         ]);
     }
 
@@ -71,10 +74,11 @@ class PageController extends Controller
     }
 
 
-    public function embed_oembed_to_iframe(string $html): string {
+    public function embed_oembed_to_iframe(string $html): string
+    {
         return preg_replace_callback(
             '/<oembed\s+url="([^"]+)"\s*><\/oembed>/i',
-            function($m) {
+            function ($m) {
                 $url = $m[1];
 
                 $wrapStart = '<div class="media" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">';

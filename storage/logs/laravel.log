@@ -29862,3 +29862,718 @@ DST Off\">2025-09-02 20:15:22.0 UTC (+00:00)</span>
 #62 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/razmikay...')
 #63 {main}
 "} 
+[2025-10-25 10:24:25] local.ERROR: Undefined variable $logo {"view":{"view":"/Users/razmikayvazyan/PhpstormProjects/bt-gs.de/resources/views/index.blade.php","data":{"page_menu_header":"<pre class=sf-dump id=sf-dump-1967617662 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Database\\Eloquent\\Collection</span> {<a class=sf-dump-ref>#1323</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:3</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1327</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+    <span class=sf-dump-index>1</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1328</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+    <span class=sf-dump-index>2</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1329</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1967617662\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","page_menu_footer":"<pre class=sf-dump id=sf-dump-844786687 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Database\\Eloquent\\Collection</span> {<a class=sf-dump-ref>#1336</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:6</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1338</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+    <span class=sf-dump-index>1</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1339</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+    <span class=sf-dump-index>2</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1340</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+    <span class=sf-dump-index>3</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1341</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+    <span class=sf-dump-index>4</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1342</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+    <span class=sf-dump-index>5</span> => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\Page
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Page</span></span> {<a class=sf-dump-ref>#1343</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:13</span> [ &#8230;13]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      +<span class=sf-dump-public title=\"Public property\">sortable</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-844786687\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","errors":"<pre class=sf-dump id=sf-dump-1137358912 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1470</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1137358912\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","page":"<pre class=sf-dump id=sf-dump-1498746608 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Nova\\Templates\\HomeTemplate</span> {<a class=sf-dump-ref>#1472</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">name</span>: \"<span class=sf-dump-str title=\"4 characters\">home</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">key</span>: \"<span class=sf-dump-str title=\"10 characters\">route.home</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">type</span>: \"<span class=sf-dump-str title=\"5 characters\">route</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">title</span>: \"<span class=sf-dump-str title=\"41 characters\">B&amp;T Geb&#228;udeservice &#8211; IMMER SAUBER BLEIBEN</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">dates</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>created_at</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Illuminate\\Support\\Carbon @1697917423
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Carbon @1697917423</span></span> {<a class=sf-dump-ref href=#sf-dump-1498746608-ref21467 title=\"2 occurrences\">#1467</a><samp data-depth=3 id=sf-dump-1498746608-ref21467 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">endOfTime</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">startOfTime</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">constructedObjectId</span>: \"<span class=sf-dump-str title=\"32 characters\">00000000000005bb0000000000000000</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">localMonthsOverflow</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localYearsOverflow</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localStrictModeEnabled</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localHumanDiffOptions</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localToStringFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localSerializer</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localMacros</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localGenericMacros</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localFormatFunction</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localTranslator</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">dumpProperties</span>: <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      #<span class=sf-dump-protected title=\"Protected property\">dumpLocale</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">dumpDateProperties</span>: <span class=sf-dump-const>null</span>
+      <span class=sf-dump-meta>date</span>: <span class=sf-dump-const title=\"Saturday, October 21, 2023
+- 2y 3d 14:40:42.602039 from now
+DST Off\">2023-10-21 19:43:43.0 UTC (+00:00)</span>
+    </samp>}
+    \"<span class=sf-dump-key>updated_at</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Illuminate\\Support\\Carbon @1755002846
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Carbon @1755002846</span></span> {<a class=sf-dump-ref href=#sf-dump-1498746608-ref21475 title=\"2 occurrences\">#1475</a><samp data-depth=3 id=sf-dump-1498746608-ref21475 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">endOfTime</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">startOfTime</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">constructedObjectId</span>: \"<span class=sf-dump-str title=\"32 characters\">00000000000005c30000000000000000</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">localMonthsOverflow</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localYearsOverflow</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localStrictModeEnabled</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localHumanDiffOptions</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localToStringFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localSerializer</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localMacros</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localGenericMacros</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localFormatFunction</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localTranslator</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">dumpProperties</span>: <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      #<span class=sf-dump-protected title=\"Protected property\">dumpLocale</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">dumpDateProperties</span>: <span class=sf-dump-const>null</span>
+      <span class=sf-dump-meta>date</span>: <span class=sf-dump-const title=\"Tuesday, August 12, 2025
+- 2m 12d 21:36:59.602072 from now
+DST Off\">2025-08-12 12:47:26.0 UTC (+00:00)</span>
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">source</span>: <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Nova\\Utils\\NovaPageDatabase
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Nova\\Utils</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">NovaPageDatabase</span></span> {<a class=sf-dump-ref>#1471</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"12 characters\">static_pages</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">model</span>: \"<span class=sf-dump-str title=\"25 characters\">App\\Nova\\Utils\\StaticPage</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Nova\\Utils\\StaticPage
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Nova\\Utils</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">StaticPage</span></span> {<a class=sf-dump-ref>#1482</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"12 characters\">static_pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:11</span> [ &#8230;11]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:11</span> [ &#8230;11]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">throwOnMissing</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">raw</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"41 characters\">B&amp;T Geb&#228;udeservice &#8211; IMMER SAUBER BLEIBEN</span>\"
+    \"<span class=sf-dump-key>meta_title</span>\" => \"<span class=sf-dump-str title=\"20 characters\">B&amp;T - Geb&#228;udeservice</span>\"
+    \"<span class=sf-dump-key>created_at</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Illuminate\\Support\\Carbon @1697917423
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Carbon @1697917423</span></span> {<a class=sf-dump-ref href=#sf-dump-1498746608-ref21467 title=\"2 occurrences\">#1467</a>}
+    \"<span class=sf-dump-key>updated_at</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Illuminate\\Support\\Carbon @1755002846
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Carbon @1755002846</span></span> {<a class=sf-dump-ref href=#sf-dump-1498746608-ref21475 title=\"2 occurrences\">#1475</a>}
+    \"<span class=sf-dump-key>attributes</span>\" => <span class=sf-dump-note>array:8</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"41 characters\">B&amp;T Geb&#228;udeservice &#8211; IMMER SAUBER BLEIBEN</span>\"
+      \"<span class=sf-dump-key>slider</span>\" => <span class=sf-dump-note>array:6</span> [ &#8230;6]
+      \"<span class=sf-dump-key>meta_image</span>\" => \"<span class=sf-dump-str title=\"50 characters\">/storage/imagic/2023/10/21/1697917989_appssss.webp</span>\"
+      \"<span class=sf-dump-key>meta_title</span>\" => \"<span class=sf-dump-str title=\"20 characters\">B&amp;T - Geb&#228;udeservice</span>\"
+      \"<span class=sf-dump-key>meta_keywords</span>\" => \"<span class=sf-dump-str title=\"852 characters\">Fensterreinigung Allg&#228;u, Glasreinigung Immenstadt, gewerbliche Fensterreinigung, Reinigung Glasfl&#228;chen, Osmose Reinigung Fenster,Teppichreinigung Allg&#228;u, Polsterreinigung Immenstadt, Teppichpflege B&#252;ro, Teppichboden reinigen lassen, Reinigungsfirma Polsterm&#246;be,Geb&#228;udereinigung Allg&#228;u, Reinigungsfirma Immenstadt, professionelle Reinigung, Reinigung Allg&#228;u, B&amp;T Geb&#228;udeservice, Reinigungsservice Bayern, Reinigung privat gewerblich, Sonderreinigung Allg&#228;u, Bodensanierung Allg&#228;u, Bodenbeschichtung Immenstadt, Epoxidharzboden reinigen, PVC Boden versiegeln, elastischer Boden beschichten, Unterhaltsreinigung Allg&#228;u, B&#252;roreinigung Immenstadt, Praxisreinigung, regelm&#228;&#223;ige Reinigung Firma, t&#228;glicher Reinigungsservice, Reinigung Kempten, Geb&#228;udereinigung Sonthofen, Reinigungsservice Oberstdorf, Geb&#228;udeservice Allg&#228;u, Reinigung Lindau, Putzfirma Allg&#228;u</span>\"
+      \"<span class=sf-dump-key>nova_page_title</span>\" => \"<span class=sf-dump-str title=\"4 characters\">sada</span>\"
+      \"<span class=sf-dump-key>meta_description</span>\" => \"<span class=sf-dump-str title=\"135 characters\">Unser erfahrenes Team sorgt f&#252;r eine schnelle, saubere und reibungslose Auftragsabwicklung &#8211; damit Sie als Kunde rundum zufrieden sind.</span>\"
+      \"<span class=sf-dump-key>nova_page_created_at</span>\" => \"<span class=sf-dump-str title=\"24 characters\">2023-10-21T19:43:43.000Z</span>\"
+    </samp>]
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:8</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"41 characters\">B&amp;T Geb&#228;udeservice &#8211; IMMER SAUBER BLEIBEN</span>\"
+    \"<span class=sf-dump-key>slider</span>\" => <span class=sf-dump-note>array:6</span> [<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-index>0</span> => <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      <span class=sf-dump-index>1</span> => <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      <span class=sf-dump-index>2</span> => <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      <span class=sf-dump-index>3</span> => <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      <span class=sf-dump-index>4</span> => <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      <span class=sf-dump-index>5</span> => <span class=sf-dump-note>array:3</span> [ &#8230;3]
+    </samp>]
+    \"<span class=sf-dump-key>meta_image</span>\" => \"<span class=sf-dump-str title=\"50 characters\">/storage/imagic/2023/10/21/1697917989_appssss.webp</span>\"
+    \"<span class=sf-dump-key>meta_title</span>\" => \"<span class=sf-dump-str title=\"20 characters\">B&amp;T - Geb&#228;udeservice</span>\"
+    \"<span class=sf-dump-key>meta_keywords</span>\" => \"<span class=sf-dump-str title=\"852 characters\">Fensterreinigung Allg&#228;u, Glasreinigung Immenstadt, gewerbliche Fensterreinigung, Reinigung Glasfl&#228;chen, Osmose Reinigung Fenster,Teppichreinigung Allg&#228;u, Polsterreinigung Immenstadt, Teppichpflege B&#252;ro, Teppichboden reinigen lassen, Reinigungsfirma Polsterm&#246;be,Geb&#228;udereinigung Allg&#228;u, Reinigungsfirma Immenstadt, professionelle Reinigung, Reinigung Allg&#228;u, B&amp;T Geb&#228;udeservice, Reinigungsservice Bayern, Reinigung privat gewerblich, Sonderreinigung Allg&#228;u, Bodensanierung Allg&#228;u, Bodenbeschichtung Immenstadt, Epoxidharzboden reinigen, PVC Boden versiegeln, elastischer Boden beschichten, Unterhaltsreinigung Allg&#228;u, B&#252;roreinigung Immenstadt, Praxisreinigung, regelm&#228;&#223;ige Reinigung Firma, t&#228;glicher Reinigungsservice, Reinigung Kempten, Geb&#228;udereinigung Sonthofen, Reinigungsservice Oberstdorf, Geb&#228;udeservice Allg&#228;u, Reinigung Lindau, Putzfirma Allg&#228;u</span>\"
+    \"<span class=sf-dump-key>nova_page_title</span>\" => \"<span class=sf-dump-str title=\"4 characters\">sada</span>\"
+    \"<span class=sf-dump-key>meta_description</span>\" => \"<span class=sf-dump-str title=\"135 characters\">Unser erfahrenes Team sorgt f&#252;r eine schnelle, saubere und reibungslose Auftragsabwicklung &#8211; damit Sie als Kunde rundum zufrieden sind.</span>\"
+    \"<span class=sf-dump-key>nova_page_created_at</span>\" => \"<span class=sf-dump-str title=\"24 characters\">2023-10-21T19:43:43.000Z</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">jsonAttributes</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"6 characters\">slider</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1498746608\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","referenzen":"<pre class=sf-dump id=sf-dump-609479383 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Nova\\Templates\\ReferenzenTemplate</span> {<a class=sf-dump-ref>#1480</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">name</span>: \"<span class=sf-dump-str title=\"10 characters\">referenzen</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">key</span>: \"<span class=sf-dump-str title=\"16 characters\">route.referenzen</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">type</span>: \"<span class=sf-dump-str title=\"5 characters\">route</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">title</span>: \"<span class=sf-dump-str title=\"10 characters\">REFERENZEN</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">dates</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>created_at</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Illuminate\\Support\\Carbon @1705844837
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Carbon @1705844837</span></span> {<a class=sf-dump-ref href=#sf-dump-609479383-ref21476 title=\"2 occurrences\">#1476</a><samp data-depth=3 id=sf-dump-609479383-ref21476 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">endOfTime</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">startOfTime</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">constructedObjectId</span>: \"<span class=sf-dump-str title=\"32 characters\">00000000000005c40000000000000000</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">localMonthsOverflow</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localYearsOverflow</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localStrictModeEnabled</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localHumanDiffOptions</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localToStringFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localSerializer</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localMacros</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localGenericMacros</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localFormatFunction</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localTranslator</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">dumpProperties</span>: <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      #<span class=sf-dump-protected title=\"Protected property\">dumpLocale</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">dumpDateProperties</span>: <span class=sf-dump-const>null</span>
+      <span class=sf-dump-meta>date</span>: <span class=sf-dump-const title=\"Sunday, January 21, 2024
+- 1y 9m 3d 20:37:08.60275 from now
+DST Off\">2024-01-21 13:47:17.0 UTC (+00:00)</span>
+    </samp>}
+    \"<span class=sf-dump-key>updated_at</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Illuminate\\Support\\Carbon @1749211087
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Carbon @1749211087</span></span> {<a class=sf-dump-ref href=#sf-dump-609479383-ref21478 title=\"2 occurrences\">#1478</a><samp data-depth=3 id=sf-dump-609479383-ref21478 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">endOfTime</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">startOfTime</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">constructedObjectId</span>: \"<span class=sf-dump-str title=\"32 characters\">00000000000005c60000000000000000</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">localMonthsOverflow</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localYearsOverflow</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localStrictModeEnabled</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localHumanDiffOptions</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localToStringFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localSerializer</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localMacros</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localGenericMacros</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localFormatFunction</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">localTranslator</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">dumpProperties</span>: <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      #<span class=sf-dump-protected title=\"Protected property\">dumpLocale</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">dumpDateProperties</span>: <span class=sf-dump-const>null</span>
+      <span class=sf-dump-meta>date</span>: <span class=sf-dump-const title=\"Friday, June 6, 2025
+- 4m 18d 22:26:18.602765 from now
+DST Off\">2025-06-06 11:58:07.0 UTC (+00:00)</span>
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">source</span>: <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Nova\\Utils\\NovaPageDatabase
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Nova\\Utils</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">NovaPageDatabase</span></span> {<a class=sf-dump-ref>#1483</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"12 characters\">static_pages</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">model</span>: \"<span class=sf-dump-str title=\"25 characters\">App\\Nova\\Utils\\StaticPage</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Nova\\Utils\\StaticPage
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Nova\\Utils</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">StaticPage</span></span> {<a class=sf-dump-ref>#1488</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"12 characters\">static_pages</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:11</span> [ &#8230;11]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:11</span> [ &#8230;11]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">throwOnMissing</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">raw</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"10 characters\">REFERENZEN</span>\"
+    \"<span class=sf-dump-key>meta_title</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Illuminate\\Support\\Carbon @1705844837
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Carbon @1705844837</span></span> {<a class=sf-dump-ref href=#sf-dump-609479383-ref21476 title=\"2 occurrences\">#1476</a>}
+    \"<span class=sf-dump-key>updated_at</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Illuminate\\Support\\Carbon @1749211087
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Carbon @1749211087</span></span> {<a class=sf-dump-ref href=#sf-dump-609479383-ref21478 title=\"2 occurrences\">#1478</a>}
+    \"<span class=sf-dump-key>attributes</span>\" => <span class=sf-dump-note>array:7</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>image</span>\" => \"<span class=sf-dump-str title=\"45 characters\">/storage/imagic/2024/01/21/1705848972_cc.webp</span>\"
+      \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"10 characters\">REFERENZEN</span>\"
+      \"<span class=sf-dump-key>partners</span>\" => \"<span class=sf-dump-str title=\"1802 characters\">[{&quot;key&quot;:&quot;cesHtQAN4Zqzi2zT&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.stadt-immenstadt.de\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749209739_csm_wappen-immenstadt_ba67ca534a.webp&quot;,&quot;name&quot;:&quot;Stadtverwaltung Immenstadt&quot;}},{&quot;key&quot;:&quot;ck2GvSCSpRkGHbHx&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/shop.hermann-gastro.de\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210363_hermann.webp&quot;,&quot;name&quot;:&quot;Hermann Gro\\u00dfk\\u00fcchentechnik Hotel- und Gastronomiebedarf GmbH&quot;}},{&quot;key&quot;:&quot;cAcRB5fTFGpkZ2na&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.schaber.com\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210475_logo_234066.webp&quot;,&quot;name&quot;:&quot;Schaber Trachtenhaus &quot;}},{&quot;key&quot;:&quot;cpGPZO4CL81nO4fz&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.dav-ulm.de\\/huettenwart-schwandalpe.html&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210686_dav-logo.webp&quot;,&quot;name&quot;:&quot;DAV Sektion Ulm e.V.&quot;}},{&quot;key&quot;:&quot;cbliDlNkW1tF1mvb&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.sallmann-autoteile.de\\/b2c\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210743_logo_sallmann_autoteile.webp&quot;,&quot;name&quot;:&quot;Sallmann Autoteile&quot;}},{&quot;key&quot;:&quot;corFWHWYbZKACi8s&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.allgaeuer-werkstaetten.de\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210928_0c62bcebd5d557b664a410369cd7f06d1f0bd64e.webp&quot;,&quot;name&quot;:&quot;Allg\\u00e4uer Werkst\\u00e4tten&quot;}},{&quot;key&quot;:&quot;cFN08K9q0gVKCfvL&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;Allg\\u00e4uer Werkst\\u00e4tten: Home&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210929_logo_alpstein_header.webp&quot;,&quot;name&quot;:&quot;Alpstein Architekten&quot;}},{&quot;key&quot;:&quot;coHjcyT7UgsStHCR&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.allgaeuer-alpenwasser.de\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749211087_allgaeuer-alpenwasser-gmbh.webp&quot;,&quot;name&quot;:&quot;Allg\\u00e4uer Alpenwasser&quot;}}]</span>\"
+      \"<span class=sf-dump-key>meta_title</span>\" => <span class=sf-dump-const>null</span>
+      \"<span class=sf-dump-key>meta_keywords</span>\" => <span class=sf-dump-const>null</span>
+      \"<span class=sf-dump-key>meta_description</span>\" => <span class=sf-dump-const>null</span>
+      \"<span class=sf-dump-key>nova_page_created_at</span>\" => \"<span class=sf-dump-str title=\"24 characters\">2024-01-21T13:47:17.000Z</span>\"
+    </samp>]
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:7</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>image</span>\" => \"<span class=sf-dump-str title=\"45 characters\">/storage/imagic/2024/01/21/1705848972_cc.webp</span>\"
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"10 characters\">REFERENZEN</span>\"
+    \"<span class=sf-dump-key>partners</span>\" => \"<span class=sf-dump-str title=\"1802 characters\">[{&quot;key&quot;:&quot;cesHtQAN4Zqzi2zT&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.stadt-immenstadt.de\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749209739_csm_wappen-immenstadt_ba67ca534a.webp&quot;,&quot;name&quot;:&quot;Stadtverwaltung Immenstadt&quot;}},{&quot;key&quot;:&quot;ck2GvSCSpRkGHbHx&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/shop.hermann-gastro.de\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210363_hermann.webp&quot;,&quot;name&quot;:&quot;Hermann Gro\\u00dfk\\u00fcchentechnik Hotel- und Gastronomiebedarf GmbH&quot;}},{&quot;key&quot;:&quot;cAcRB5fTFGpkZ2na&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.schaber.com\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210475_logo_234066.webp&quot;,&quot;name&quot;:&quot;Schaber Trachtenhaus &quot;}},{&quot;key&quot;:&quot;cpGPZO4CL81nO4fz&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.dav-ulm.de\\/huettenwart-schwandalpe.html&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210686_dav-logo.webp&quot;,&quot;name&quot;:&quot;DAV Sektion Ulm e.V.&quot;}},{&quot;key&quot;:&quot;cbliDlNkW1tF1mvb&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.sallmann-autoteile.de\\/b2c\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210743_logo_sallmann_autoteile.webp&quot;,&quot;name&quot;:&quot;Sallmann Autoteile&quot;}},{&quot;key&quot;:&quot;corFWHWYbZKACi8s&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.allgaeuer-werkstaetten.de\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210928_0c62bcebd5d557b664a410369cd7f06d1f0bd64e.webp&quot;,&quot;name&quot;:&quot;Allg\\u00e4uer Werkst\\u00e4tten&quot;}},{&quot;key&quot;:&quot;cFN08K9q0gVKCfvL&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;Allg\\u00e4uer Werkst\\u00e4tten: Home&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749210929_logo_alpstein_header.webp&quot;,&quot;name&quot;:&quot;Alpstein Architekten&quot;}},{&quot;key&quot;:&quot;coHjcyT7UgsStHCR&quot;,&quot;layout&quot;:&quot;list&quot;,&quot;attributes&quot;:{&quot;link&quot;:&quot;https:\\/\\/www.allgaeuer-alpenwasser.de\\/&quot;,&quot;logo&quot;:&quot;\\/storage\\/imagic\\/2025\\/06\\/06\\/1749211087_allgaeuer-alpenwasser-gmbh.webp&quot;,&quot;name&quot;:&quot;Allg\\u00e4uer Alpenwasser&quot;}}]</span>\"
+    \"<span class=sf-dump-key>meta_title</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>meta_keywords</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>meta_description</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>nova_page_created_at</span>\" => \"<span class=sf-dump-str title=\"24 characters\">2024-01-21T13:47:17.000Z</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">jsonAttributes</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-609479383\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined variable $logo at /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/resources/views/index.blade.php:201)
+[stacktrace]
+#0 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('/Users/razmikay...')
+#1 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/razmikay...', Array)
+#3 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/razmikay...', Array)
+#4 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(72): Livewire\\Mechanisms\\ExtendBlade\\ExtendedCompilerEngine->evaluatePath('/Users/razmikay...', Array)
+#5 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/razmikay...', Array)
+#6 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/View.php(207): Livewire\\Mechanisms\\ExtendBlade\\ExtendedCompilerEngine->get('/Users/razmikay...', Array)
+#7 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/View.php(190): Illuminate\\View\\View->getContents()
+#8 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/View.php(159): Illuminate\\View\\View->renderContents()
+#9 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#10 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/whitecube/nova-page/src/Http/Middleware/LoadPageForCurrentRoute.php(40): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Whitecube\\NovaPage\\Http\\Middleware\\LoadPageForCurrentRoute->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#25 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#33 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#34 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#35 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#36 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/bootstrap/nova/src/Http/Middleware/ServeNova.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Laravel\\Nova\\Http\\Middleware\\ServeNova->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#58 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#59 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/razmikay...')
+#60 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $logo at /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/storage/framework/views/734ae7cc359d1cb7a665b38265d5ac59.php:199)
+[stacktrace]
+#0 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(255): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', '/Users/razmikay...', 199)
+#1 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/storage/framework/views/734ae7cc359d1cb7a665b38265d5ac59.php(199): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', '/Users/razmikay...', 199)
+#2 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('/Users/razmikay...')
+#3 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('/Users/razmikay...', Array)
+#5 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/Users/razmikay...', Array)
+#6 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(72): Livewire\\Mechanisms\\ExtendBlade\\ExtendedCompilerEngine->evaluatePath('/Users/razmikay...', Array)
+#7 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\\View\\Engines\\CompilerEngine->get('/Users/razmikay...', Array)
+#8 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/View.php(207): Livewire\\Mechanisms\\ExtendBlade\\ExtendedCompilerEngine->get('/Users/razmikay...', Array)
+#9 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/View.php(190): Illuminate\\View\\View->getContents()
+#10 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/View.php(159): Illuminate\\View\\View->renderContents()
+#11 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#12 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#13 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#14 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#15 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#16 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/whitecube/nova-page/src/Http/Middleware/LoadPageForCurrentRoute.php(40): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Whitecube\\NovaPage\\Http\\Middleware\\LoadPageForCurrentRoute->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/bootstrap/nova/src/Http/Middleware/ServeNova.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Laravel\\Nova\\Http\\Middleware\\ServeNova->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#59 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#60 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#61 /Users/razmikayvazyan/PhpstormProjects/bt-gs.de/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/razmikay...')
+#62 {main}
+"} 

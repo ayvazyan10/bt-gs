@@ -12,6 +12,8 @@
     @livewireStyles
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     {!! nova_get_setting('head_code') !!}
+
+    @stack('styles')
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="100">
 {!! RecaptchaV3::initJs() !!}
@@ -24,6 +26,7 @@
 @include('layout.parts.footer')
 
 @livewireScripts
+@stack('scripts')
 <script>
     window.cookieconsent.initialise({
         "palette": {
